@@ -24,7 +24,7 @@ export function parsePickupCode(input: string): ParsedPickupCode {
   }
 
   if (cabinetId !== null && (cabinetId < 1 || cabinetId > 169)) {
-    errors.push("货柜号需要在 1-169 之间");
+    errors.push("货柜号需要在1-169之间,例如155-2-88,我想田忌吧");
   }
 
   if (shelfLevel !== null && (shelfLevel < 1 || shelfLevel > 6)) {
